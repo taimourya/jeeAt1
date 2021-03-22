@@ -48,7 +48,7 @@ et creation des beans à l'interieur
 le seul endroid au y'aura des modification sera le fichier xml (confBean.xml)
 plus de redandance de code puisque c'est spring qui va s'occuper de coder a notre place
 ###### inconvénient
-pas d'inconvenion
+pas d'inconvénient
 
 ### commit 4 commit (injection avec spring annotation)
 utilisation des annotation component pour dire a spring que la classe concerner doit etre ajouter
@@ -57,5 +57,5 @@ aux beans et l'annotation autowired pour dire a spring que l'attribue doit etre 
 ###### Avantage
 la methode la plus facile a utiliser
 ###### Inconvenion
-pas d'inconvenion
+pas d'inconvénient
 
