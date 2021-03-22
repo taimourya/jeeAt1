@@ -22,7 +22,7 @@ avec un setDao
 
 ###### Avantage
 facile a utiliser
-###### Inconvenion
+###### inconvénient
 on est obliger de modifier le code plus tard si on a une nouvelle implementation
 de IDao ou IMetier ce qui n'est pas pratique
 
@@ -35,7 +35,7 @@ apres on injecte avec un setDao
 
 ###### Avantage
 le seul endroid au y'aura des modification sera le fichier txt (dependance.txt)
-###### Inconvenion
+###### inconvénient
 si on a plusieurs classe a injecter et a instancier dynamique y'aura une Redondance 
 de code donc on v'as faire des copier coller
 
@@ -47,7 +47,7 @@ et creation des beans à l'interieur
 ###### Avantage
 le seul endroid au y'aura des modification sera le fichier xml (confBean.xml)
 plus de redandance de code puisque c'est spring qui va s'occuper de coder a notre place
-###### Inconvenion
+###### inconvénient
 pas d'inconvenion
 
 ### commit 4 commit (injection avec spring annotation)
