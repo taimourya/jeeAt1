@@ -16,7 +16,7 @@ public class Main {
     public static void initDependance()  {
 
         try {
-            FileInputStream file = new FileInputStream("C:\\Users\\yahya\\IdeaProjects\\jeeAt1\\src\\main\\java\\dependance.txt");
+            FileInputStream file = new FileInputStream("C:\\Users\\yahya\\IdeaProjects\\jeeAt1\\src\\main\\resources\\dependance.txt");
             Scanner sc = new Scanner(file);
             Class daoClass = Class.forName(sc.nextLine());
             dao = (Idao)daoClass.newInstance();
@@ -24,7 +24,6 @@ public class Main {
             Class metierClass = Class.forName(sc.nextLine());
             metier = (IMetier)metierClass.newInstance();
             ((MetierImp)metier).setDao(dao);
-
         } catch (ClassNotFoundException | FileNotFoundException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
@@ -33,12 +32,10 @@ public class Main {
             e.printStackTrace();
         }
 
-
     }
 
     public static void main(String[] args) {
         initDependance();
-
         System.out.println("calculer : " + metier.calculer());
     }
 }
