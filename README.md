@@ -20,7 +20,7 @@ ca sera en mode console
 instanciation de DaoImp et MetierImp et l'injection du dao pour le metier
 avec un setDao
 
-###### Aventage
+###### Avantage
 facile a utiliser
 ###### Inconvenion
 on est obliger de modifier le code plus tard si on a une nouvelle implementation
@@ -33,7 +33,7 @@ injecter dynamique. au niveau du code on doit lire le fichier txt ligne par lign
 et instancier dynamique les classes avec Class.forname et class.newInstance 
 apres on injecte avec un setDao
 
-###### Aventage
+###### Avantage
 le seul endroid au y'aura des modification sera le fichier txt (dependance.txt)
 ###### Inconvenion
 si on a plusieurs classe a injecter et a instancier dynamique y'aura une Redondance 
@@ -44,7 +44,7 @@ import des dependances (spring-core, spring-context et spring-beans) dans le fic
 de configuration de maven (pom.xml) et ensuite la creation du fichier xml (confBean.xml)
 et creation des beans à l'interieur
 
-###### Aventage
+###### Avantage
 le seul endroid au y'aura des modification sera le fichier xml (confBean.xml)
 plus de redandance de code puisque c'est spring qui va s'occuper de coder a notre place
 ###### Inconvenion
@@ -54,7 +54,7 @@ pas d'inconvenion
 utilisation des annotation component pour dire a spring que la classe concerner doit etre ajouter
 aux beans et l'annotation autowired pour dire a spring que l'attribue doit etre injecter automatiquement
 
-###### Aventage
+###### Avantage
 la methode la plus facile a utiliser
 ###### Inconvenion
 pas d'inconvenion
